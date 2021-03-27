@@ -34,84 +34,41 @@ export default ({ data }) => {
       <Container>
         <Image
           rounded
-          width="140"
-          height="140"
-          src={`../../icons/luke-${toString()}.png`}
+          height="200"
+          src={`../../icons/profile-pic.png`}
           alt={author}
         />
         <article className="w-75 m-auto pt-2 text-justify">
-          <p className="text-center">
-            {designations.map((attr, i) => (
-              <span key={attr}>
-                &nbsp;<b>{attr}</b>&nbsp;
-                {i < designations.length - 1 && <>||</>}
-              </span>
-            ))}
+          <p className="h3 i-5 mt-4 pt-2 mb-5">
+            Hello there! I'm Tom and I work as a software engineer in AI, before
+            which I studied Physics at Imperial College London.
+          </p>{" "}
+          <p className="h3 i-5 mb-5">
+            I'm passionate about working with technology that has the potential
+            to drive massive impact across society. In that vein, I'm currently
+            exploring and learning about AI at{" "}
+            <a href="https://www.nplan.io/"> nPlan</a> and before that I worked
+            in Ethereum, helping to build the protocol's first privacy protocol
+            at <a href="https://aztec.network/">Aztec</a>.
           </p>
-          <p className="i-5 mt-4 pt-2">
-            Hello there! My name is <b>{`${author}`}</b>. I am a&nbsp;
-            <a
-              href="https://www.dictionary.com/e/fictional-characters/padawan/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              padawan
-            </a>
-            &nbsp;
-            <b>{occupation}</b> discovering the ways of the code. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+          <p className="h3 i-5 mb-5">
+            Live and work in London, feel free to hit me up for a coffee and
+            chat!
           </p>
-          <p className="i-5">
-            In my spare time, Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <p className="i-5">
-            Check out my <Link to="/projects">projects</Link> to see what I've
-            been up to! Or check out my <Link to="/blog">blog</Link> to see
-            what's recently caught my eye!
-          </p>
-        </article>
-        <article className="w-75 m-auto">
-          {unemployed && (
-            <>
-              <hr />
-              <p className="unemployed">
-                <small>
-                  I am <b>currently looking for new opportunities</b>! If you
-                  like what you <Link to="/resume">see</Link>, let's get
-                  in&nbsp;
-                  <a
-                    href="mailto:red.five@rebellion.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    touch
-                  </a>
-                  !
-                </small>
-              </p>
-            </>
-          )}
-          <hr />
-          <h5 className="watch-list-title pt-4">
-            Here are a couple of books from my reading list:
-          </h5>
-          <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{bookLinks}</ul>
-          <h5 className="watch-list-title pt-4">
-            Here are a couple of shows from my watch list:
-          </h5>
-          <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{showLinks}</ul>
-          <h5 className="watch-list-title pt-4">
-            Here are a couple of movies from my watch list:
-          </h5>
-          <p>
-            <i>...waaaay too many to list.</i>
-          </p>
+          <ul>
+            <li>
+              <h3>
+                <a href="https://twitter.com/tom_waite_">@tom_waite_</a>
+              </h3>
+            </li>
+            <li>
+              <h3>
+                <a href="href=mailto:thomas.waite4@gmail.com">
+                  thomas.waite4@gmail.com
+                </a>
+              </h3>
+            </li>
+          </ul>
         </article>
       </Container>
     </PageLayout>
