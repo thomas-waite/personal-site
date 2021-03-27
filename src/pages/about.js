@@ -55,20 +55,25 @@ export default ({ data }) => {
             Live and work in London, feel free to hit me up for a coffee and
             chat!
           </p>
-          <ul>
-            <li>
-              <h3>
-                <a href="https://twitter.com/tom_waite_">@tom_waite_</a>
-              </h3>
-            </li>
-            <li>
-              <h3>
-                <a href="href=mailto:thomas.waite4@gmail.com">
-                  thomas.waite4@gmail.com
-                </a>
-              </h3>
-            </li>
-          </ul>
+          <div className="mb-10">
+            <ul>
+              <li>
+                <h3>
+                  <a href="https://twitter.com/tom_waite_">@tom_waite_</a>
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <a href="href=mailto:thomas.waite4@gmail.com">
+                    thomas.waite4@gmail.com
+                  </a>
+                </h3>
+              </li>
+            </ul>
+          </div>
+          <br></br>
+          <br></br>
+          <br></br>
         </article>
       </Container>
     </PageLayout>

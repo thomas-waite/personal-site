@@ -10,11 +10,9 @@ export default () => {
   return (
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
-        <FontAwesomeIcon
-          icon={["fab", "rebel"]}
-          className={`brand-icon rebel`}
-          title="Home"
-        />
+        <a>
+          <h1>Tom Waite</h1>
+        </a>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse
@@ -22,11 +20,11 @@ export default () => {
         className="justify-content-end"
       >
         <Nav className="pr-3 mr-4 nav-links">
-          <Nav.Link className="ml-2" as={Link} to="/blog" title="Blog">
-            Blog
-          </Nav.Link>
           <Nav.Link className="ml-2" as={Link} to="/about" title="About">
             About
+          </Nav.Link>
+          <Nav.Link className="ml-2" as={Link} to="/blog" title="Blog">
+            Blog
           </Nav.Link>
           <Nav.Link className="ml-2" as={Link} to="/projects" title="Projects">
             Projects

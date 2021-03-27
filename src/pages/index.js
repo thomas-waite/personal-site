@@ -33,9 +33,9 @@ export default ({ data }) => {
             <span className="last-name">{firstName}</span>&nbsp;
             <span className="last-name">{lastName}</span>
           </h1>
-          <p>
+          <h3>
             <i>{occupation}&nbsp;</i>
-          </p>
+          </h3>
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
